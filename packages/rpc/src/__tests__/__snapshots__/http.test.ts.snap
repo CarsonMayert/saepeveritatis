@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildRequestOptions 1`] = `
+Object {
+  "data": Object {
+    "args": Array [
+      "a",
+      "b",
+    ],
+  },
+  "headers": Object {
+    "accept": "application/json",
+  },
+  "method": "GET",
+  "query": undefined,
+  "url": "/foo/baz",
+}
+`;
+
+exports[`buildRequestOptions 2`] = `
+Object {
+  "data": null,
+  "headers": Object {
+    "accept": "application/json",
+  },
+  "method": "GET",
+  "query": undefined,
+  "url": "/foo",
+}
+`;
+
+exports[`http normal 1`] = `
+Array [
+  Array [
+    Object {
+      "data": null,
+      "headers": Object {
+        "accept": "application/json",
+      },
+      "method": "GET",
+      "query": undefined,
+      "url": "/foo",
+    },
+    Object {
+      "baseURL": "",
+      "fetcher": [MockFunction] {
+        "calls": [Circular],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Object {
+              "isTest": true,
+            },
+          },
+        ],
+      },
+      "middleware": Array [],
+      "withCredentials": false,
+    },
+  ],
+]
+`;

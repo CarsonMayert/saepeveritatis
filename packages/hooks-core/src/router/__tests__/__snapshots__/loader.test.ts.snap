@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`load file route with custom trigger 1`] = `
+Array [
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "custom",
+    "functionName": "custom",
+    "middleware": Array [],
+    "trigger": Object {
+      "isCustom": true,
+      "type": "Custom",
+    },
+    "useInputMetadata": false,
+  },
+]
+`;
+
+exports[`load file route with http trigger 1`] = `
+Array [
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "get",
+    "functionName": "get",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "GET",
+      "path": "/api/get",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "post",
+    "functionName": "post",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "POST",
+      "path": "/api/post",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "put",
+    "functionName": "put",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "PUT",
+      "path": "/api/put",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "del",
+    "functionName": "del",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "DELETE",
+      "path": "/api/del",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "patch",
+    "functionName": "patch",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "PATCH",
+      "path": "/api/patch",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "head",
+    "functionName": "head",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "HEAD",
+      "path": "/api/head",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "options",
+    "functionName": "options",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "OPTIONS",
+      "path": "/api/options",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+  Object {
+    "file": "/index.ts",
+    "fn": [Function],
+    "functionId": "index",
+    "functionName": "$default",
+    "middleware": Array [],
+    "trigger": Object {
+      "method": "ALL",
+      "path": "/api/index",
+      "requestClient": Object {
+        "client": "@midwayjs/rpc",
+        "fetcher": "http",
+      },
+      "type": "HTTP",
+    },
+    "useInputMetadata": false,
+  },
+]
+`;

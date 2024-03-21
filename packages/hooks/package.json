@@ -1,0 +1,49 @@
+{
+  "name": "@midwayjs/hooks",
+  "version": "3.0.0-rc.13",
+  "description": "A framework for building api & fullstack applications faster",
+  "keywords": [
+    "midway",
+    "hooks",
+    "fullstack",
+    "api",
+    "applications"
+  ],
+  "author": "Lxxyx <lxxyxzj@gmail.com>",
+  "homepage": "https://github.com/midwayjs/hooks",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:midwayjs/hooks.git"
+  },
+  "main": "dist/midwayjs-hooks.cjs.js",
+  "module": "dist/midwayjs-hooks.esm.js",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "lodash": "^4.17.21",
+    "upath": "^2.0.1",
+    "find-up": "5.0.0",
+    "@midwayjs/hooks-core": "^3.0.0-rc.13",
+    "@midwayjs/glob": "^1.0.6",
+    "@midwayjs/decorator": "^3.0.10",
+    "@midwayjs/core": "^3.1.0"
+  },
+  "peerDependencies": {
+    "zod": ">=3.0.0",
+    "@midwayjs/decorator": ">=3.0.0",
+    "@midwayjs/core": ">=3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "internal"
+  ],
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "internal/index.ts"
+    ]
+  }
+}
